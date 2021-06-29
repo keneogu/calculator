@@ -1,9 +1,12 @@
 # Calculator-App
-[Live Link](https://calculator-kene.herokuapp.com/)
 
 A  ![](https://img.shields.io/badge/Microverse-blueviolet)  React Module Project
 
 A Calculator App is developed.
+
+## Live Link
+
+[Live Link](https://calculator-kene.herokuapp.com/)
 
 ## Built With
 
