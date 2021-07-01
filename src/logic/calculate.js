@@ -6,7 +6,13 @@ function calculate(calculator, buttonName) {
   if (buttonName === '+/-') {
     total *= -1;
     next *= -1;
-  } else if (button === '+' || button === '-' || button === 'X' || button === '%' || button === '÷') {
+  } else if (
+    buttonName === '+'
+    || buttonName === '-'
+    || buttonName === 'X'
+    || buttonName === '%'
+    || buttonName === '÷'
+  ) {
     total = operate(total, next, operation);
   } else if (buttonName === 'AC') {
     total = '0';
