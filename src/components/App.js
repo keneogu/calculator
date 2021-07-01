@@ -5,10 +5,9 @@ import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
 function App() {
-  calculate();
   return (
     <>
-      <Display />
+      <Display calculate={calculate} />
       <ButtonPanel />
     </>
   );
