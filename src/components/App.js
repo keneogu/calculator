@@ -24,10 +24,10 @@ class App extends React.Component {
   }
 
   render() {
-   
+    const { total, next, operation } = this.state;
     return (
       <>
-        <Display />
+        <Display result={total ?? next ?? operation} />
         <ButtonPanel />
       </>
     );
