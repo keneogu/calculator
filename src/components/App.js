@@ -23,7 +23,6 @@ class App extends React.Component {
   render() {
     const { total, next, operation } = this.state;
     const output = operation === '=' ? total : `${total} ${operation} ${next}`;
-    console.log(total, next, operation);
     return (
       <>
         <Display result={output} />
