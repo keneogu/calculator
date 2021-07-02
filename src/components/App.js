@@ -8,26 +8,25 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: '',
+      total: '0',
       next: '',
-      operation: null,
+      operation: '',
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
-    // const { total, next, operation } = calculate(this.state, buttonName);
-    // this.setState({ total, next, operation });
-    const dataset = this.state;
-    const calc = calculate(dataset, buttonName);
-    this.setState(() => ({ ...calc }));
+    const { total, next, operation } = calculate(this.state, buttonName);
+    this.setState({ total, next, operation });
   }
 
   render() {
     const { total, next, operation } = this.state;
+    const output = operation === '=' ? total : `${total} ${operation} ${next}`;
+    console.log(total, next, operation);
     return (
       <>
-        <Display result={total ?? next ?? operation} />
+        <Display result={output} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
