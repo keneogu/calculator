@@ -14,10 +14,10 @@ const App = () => {
   const { total, next, operation } = data;
   const output = operation === '=' ? total : `${total} ${operation} ${next}`;
   return (
-    <>
-      <Display result={output} />
+    <div className="contain">
+      <Display className="display-content" result={output} />
       <ButtonPanel clickHandler={handleClick} />
-    </>
+    </div>
   );
 };
 
