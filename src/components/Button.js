@@ -1,8 +1,9 @@
 import React from 'react';
+import '../App.css';
 import PropTypes from 'prop-types';
 
 const Button = ({ name, handleClick }) => (
-  <button type="button" style={{ height: '30px', width: '50px' }} onClick={() => handleClick(name)}>{name}</button>
+  <button type="button" className="btn" onClick={() => handleClick(name)}>{name}</button>
 );
 
 Button.propTypes = {

@@ -24,3 +24,19 @@
   padding: 20px 10px 0 10px;
 }
 
+/* 
+.btn-panel {
+  width: 100%;
+} */
+
+.inner-panel {
+  height: 100px;
+}
+
+.btn {
+  width: 175px;
+  height: 100%;
+  font-size: 30px;
+  border: 2px solid #666;
+}
+
