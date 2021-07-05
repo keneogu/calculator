@@ -10,3 +10,17 @@
   display: flex;
   flex-direction: column;
 }
+
+.display {
+  background-color: #87898E;
+  height: 100px;
+  text-align: right;
+}
+
+.display-head {
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 3rem;
+  padding: 20px 10px 0 10px;
+}
+
