@@ -1,13 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import App from './App';
+import Navbar from './Navbar';
+import Home from './Home';
+import Calculator from './Calculator';
+import Quote from './Quote';
 
 const Routes = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" component={App} />
-    </Switch>
-  </BrowserRouter>
+  <>
+    <BrowserRouter>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/calculator" component={Calculator} />
+        <Route exact path="/quote" component={Quote} />
+      </Switch>
+    </BrowserRouter>
+  </>
 );
 
 export default Routes;
