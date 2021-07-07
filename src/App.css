@@ -7,6 +7,7 @@
 .contain {
   width: 700px;
   margin: 0 auto;
+  margin-bottom: 3%;
   display: flex;
   flex-direction: column;
 }
@@ -46,4 +47,49 @@
 
 .wide {
   width: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+}
+
+.navbar h2 {
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.homepage {
+  width: 920px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.home-head {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-para {
+  letter-spacing: .2rem;
+}
+
+blockquote {
+  margin-top: 3em;
+  font-size: 2rem;
+  padding: 1em;
 }
