@@ -13,7 +13,7 @@
 }
 
 .display {
-  background-color: #87898E;
+  background-color: #87898e;
   height: 100px;
   text-align: right;
 }
@@ -35,7 +35,6 @@
   font-size: 30px;
   border: 2px solid #666;
 }
-
 
 .primary {
   background-color: #e0e0e0;
@@ -85,7 +84,7 @@
 }
 
 .home-para {
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
 blockquote {
