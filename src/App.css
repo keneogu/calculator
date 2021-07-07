@@ -3,3 +3,92 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.contain {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  background-color: #87898e;
+  height: 100px;
+  text-align: right;
+}
+
+.display-head {
+  color: aliceblue;
+  font-weight: bolder;
+  font-size: 3rem;
+  padding: 20px 10px 0 10px;
+}
+
+.inner-panel {
+  height: 100px;
+}
+
+.btn {
+  width: 175px;
+  height: 100%;
+  font-size: 30px;
+  border: 2px solid #666;
+}
+
+.primary {
+  background-color: #e0e0e0;
+}
+
+.secondary {
+  background-color: #f5913e;
+}
+
+.wide {
+  width: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+}
+
+.navbar h2 {
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  text-decoration: none;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.homepage {
+  width: 920px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.home-head {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-para {
+  letter-spacing: 0.2rem;
+}
+
+blockquote {
+  margin-top: 3em;
+  font-size: 2rem;
+  padding: 1em;
+}

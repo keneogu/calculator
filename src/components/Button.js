@@ -1,13 +1,28 @@
 import React from 'react';
+import '../App.css';
 import PropTypes from 'prop-types';
 
-const Button = ({ name, handleClick }) => (
-  <button type="button" style={{ height: '30px', width: '50px' }} onClick={() => handleClick(name)}>{name}</button>
-);
+const Button = ({
+  name, handleClick, wide, color,
+}) => {
+  let classNameValue = 'btn';
+  classNameValue = color === 'primary' ? `${classNameValue} primary` : `${classNameValue} secondary`;
+  classNameValue = wide ? `${classNameValue} wide` : classNameValue;
+  return (
+    <button type="button" className={classNameValue} onClick={() => handleClick(name)}>{name}</button>
+  );
+};
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   handleClick: PropTypes.func.isRequired,
+  wide: PropTypes.bool.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default Button;
+
+// Button.defaultProps = {
+//   wide: false,
+//   color: '#f99030',
+// };
