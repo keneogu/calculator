@@ -10,4 +10,4 @@ test('should render button components with no error', () => {
   expect(btnPan).toHaveTextContent('+');
   expect(btnPan).toHaveTextContent('6');
   expect(btnPan).toHaveTextContent('-');
-})
+});

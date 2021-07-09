@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Display = ({ result }) => (
   <div className="display">
-    <h1 className="display-head">{result}</h1>
+    <h1 className="display-head" data-testid="display">{result}</h1>
   </div>
 );
 
