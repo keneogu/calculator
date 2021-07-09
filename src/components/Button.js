@@ -9,7 +9,7 @@ const Button = ({
   classNameValue = color === 'primary' ? `${classNameValue} primary` : `${classNameValue} secondary`;
   classNameValue = wide ? `${classNameValue} wide` : classNameValue;
   return (
-    <button type="button" className={classNameValue} onClick={() => handleClick(name)}>{name}</button>
+    <button type="button" data-testid="button" className={classNameValue} onClick={() => handleClick(name)}>{name}</button>
   );
 };
 
@@ -21,8 +21,3 @@ Button.propTypes = {
 };
 
 export default Button;
-
-// Button.defaultProps = {
-//   wide: false,
-//   color: '#f99030',
-// };
