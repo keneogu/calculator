@@ -6,7 +6,7 @@ import Button from './Button';
 const ButtonPanel = ({ clickHandler }) => {
   const renderButton = ({ name, color = 'primary', wide = false }) => <Button name={name} handleClick={clickHandler} color={color} wide={wide} />;
   return (
-    <div className="btn-panel">
+    <div className="btn-panel" data-testid="button-panel">
       <div className="inner-panel">
         {renderButton({ name: 'AC' })}
         {renderButton({ name: '+/-' })}
