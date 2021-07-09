@@ -15,5 +15,13 @@ describe('calculate', () => {
 		const myCalculate = { total: 15, operation: 'x', next: '' };
 		const data = calculate(myCalculate, 'x');
 		expect(data.operation).toEqual('x');
-	  });
+	});
+	test('should calculate output when "=" pressed', () => {
+		const data = { total: 7, next: 5, operation: 'x' };
+		const newData = calculate(data, '=');
+	
+		expect(newData.total).toEqual('35');
+		expect(newData.next).toEqual('');
+		expect(newData.operation).toEqual('=');
+	});
 });
