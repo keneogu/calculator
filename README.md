@@ -27,7 +27,6 @@ To get a local copy up and running follow these simple example steps.
 
 ## Tests
 
-- install `Jest`
 - run `npm test` to run all the tests
 
 ## Author
