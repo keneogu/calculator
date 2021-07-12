@@ -24,4 +24,9 @@ describe('calculate', () => {
     expect(newData.next).toEqual('');
     expect(newData.operation).toEqual('=');
   });
+  test('it negates the value of operand when the button is clicked', () => {
+    const data = { total: '72', next: '', operation: '' };
+    const newData = calculate(data, '+/-');
+    expect(newData).toEqual({ total: '-72', next: '', operation: '' });
+  })
 });
