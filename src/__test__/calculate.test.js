@@ -29,4 +29,19 @@ describe('calculate', () => {
     const newData = calculate(data, '+/-');
     expect(newData).toEqual({ total: '-72', next: '', operation: '' });
   })
+  test('should perform subtraction operation', () => {
+    let data = { total: '5', next: '7', operation: '-' };
+    data = calculate(data, '=');
+    expect(data).toEqual({ total: '-2', next: '', operation: '=' });
+  })
+  test('successfully performs a division operation', () => {
+    let data = { total: '20', next: '10', operation: '÷' };
+    data = calculate(data, '=');
+    expect(data).toEqual({ total: '2', next: '', operation: '=' });
+  });
+  test('calculates the percentage', () => {
+    let data = { total: '33', next: '', operation: '' };
+    data = calculate(data, '%');
+    expect(data).toEqual({ total: '0.33', next: '', operation: '' });
+  });
 });
