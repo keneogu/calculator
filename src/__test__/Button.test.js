@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import Button from '../components/Button';
 
 test('should render the button component', () => {
-  render(<Button name="4" wide={true} color='green' handleClick={fireEvent.click} />);
+  render(<Button name="4" wide color="green" handleClick={fireEvent.click} />);
   const btn = screen.getByTestId('button');
   expect(btn.textContent).toBe('4');
 });
