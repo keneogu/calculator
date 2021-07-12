@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import ButtonPanel from '../ButtonPanel';
+import ButtonPanel from '../components/ButtonPanel';
 
 test('should render button components with no error', () => {
   const { getByTestId } = render(<ButtonPanel clickHandler={fireEvent.click} />);

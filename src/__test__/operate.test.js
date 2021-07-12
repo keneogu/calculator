@@ -1,4 +1,4 @@
-import operate from '../../logic/operate';
+import operate from '../logic/operate';
 
 test('should add,divide,multiply,subtract and percentage of two numbers', () => {
   const add = operate('5', '6', '+');

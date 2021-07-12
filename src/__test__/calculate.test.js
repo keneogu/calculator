@@ -1,4 +1,4 @@
-import calculate from '../../logic/calculate';
+import calculate from '../logic/calculate';
 
 describe('calculate', () => {
   test('clears the display when AC button is pressed', () => {
