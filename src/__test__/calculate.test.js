@@ -28,12 +28,12 @@ describe('calculate', () => {
     const data = { total: '72', next: '', operation: '' };
     const newData = calculate(data, '+/-');
     expect(newData).toEqual({ total: '-72', next: '', operation: '' });
-  })
+  });
   test('should perform subtraction operation', () => {
     let data = { total: '5', next: '7', operation: '-' };
     data = calculate(data, '=');
     expect(data).toEqual({ total: '-2', next: '', operation: '=' });
-  })
+  });
   test('successfully performs a division operation', () => {
     let data = { total: '20', next: '10', operation: '÷' };
     data = calculate(data, '=');
