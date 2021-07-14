@@ -1,8 +1,8 @@
-# Calculator-App
+A  ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-A  ![](https://img.shields.io/badge/Microverse-blueviolet)  React Module Project
+# React Calculator-App
 
-A Calculator App is developed.
+This is a React calculator app which is built fully using JavaScript and JSX.In this app, you can do your calculations very easily and efficiently.
 
 ## Live Link
 
@@ -12,6 +12,9 @@ A Calculator App is developed.
 
 - JavaScript
 - React
+- HTML/CSS
+- WEBPACK
+- JEST
 
 ## Getting Started
 
@@ -21,6 +24,10 @@ To get a local copy up and running follow these simple example steps.
 - cd into the root directory
 - npm install - This will install all the packages in the package.json file
 - npm start - This will run the app locally in the local environment
+
+## Tests
+
+- run `npm test` to run all the tests
 
 ## Author
 

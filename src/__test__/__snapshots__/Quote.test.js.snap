@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the Quote snapshot 1`] = `
+<div
+  className="quote"
+>
+  <p>
+    <blockquote>
+      The view you adopt for yourself profoundly affects the way you lead your life. It can determine whether you become the person you want to be and whether you accomplish the things you value.
+    </blockquote>
+  </p>
+</div>
+`;
